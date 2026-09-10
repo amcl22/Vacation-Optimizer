@@ -184,7 +184,19 @@ st.titlest.title("Where Should You Go Next? ✈️")
 st.markdown(
     "Personalized destination recommendations based on your budget, travel style, weather preferences, and interests."
 )
-
+st.markdown("""
+<div style="
+    padding: 28px;
+    border-radius: 20px;
+    background: linear-gradient(135deg, #DCE9E4, #F4EBDD);
+    margin-bottom: 24px;
+">
+    <h3 style="margin-bottom:8px;">Find your perfect getaway</h3>
+    <p style="margin:0; font-size:17px;">
+        Compare destinations using cost, weather, travel time, and what actually matters to you.
+    </p>
+</div>
+""", unsafe_allow_html=True)
 c1, c2, c3, c4 = st.columns(4)
 c1.metric("Trip length", f"{nights} nights")
 c2.metric("Budget", f"${budget:,}")
@@ -204,7 +216,7 @@ d.metric("Travel time", f"{top['flight_hours']:.1f} hrs")
 
 st.info(explanation(top, budget, max_flight, weights))
 
-st.markdown("### Top 5 destinations")
+st.markdownst.markdown("### Other Destinations You'll Love")
 table = scored.head(5)[
     ["city", "country", "overall_score", "estimated_trip_cost", "avg_temp_f", "flight_hours", "interest_match_score"]
 ].copy()
