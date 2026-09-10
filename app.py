@@ -800,33 +800,11 @@ st.markdown(
 )
 
 
-st.markdown("""
-<div style="
-    padding: 28px;
-    border-radius: 20px;
-    background: linear-gradient(
-        135deg,
-        #DCE9E4,
-        #F4EBDD
-    );
-    margin-bottom: 24px;
-">
+st.container(border=True).markdown("""
+### 🌎 Find your perfect getaway
 
-    <h3 style="margin-bottom:8px;">
-        Find your perfect getaway
-    </h3>
-
-    <p style="
-        margin:0;
-        font-size:17px;
-    ">
-        Compare destinations using cost,
-        weather, travel time,
-        and what actually matters to you.
-    </p>
-
-</div>
-""", unsafe_allow_html=True)
+Compare destinations using **cost, weather, travel time, and what actually matters to you.**
+""")
 
 
 # ----------------------------------------------------
