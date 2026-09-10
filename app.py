@@ -129,7 +129,7 @@ def explanation(row, budget, max_flight, weights):
         f"The main trade-off is that {tradeoff}."
     )
 
-st.sidebar.titlest.sidebar.title("Plan Your Trip ✈️")
+st.sidebar.title("Plan Your Trip ✈️")
 st.sidebar.caption("Tell us what your ideal vacation looks like.")
 departure = st.sidebar.selectbox("Departure airport", ["PHL"])
 start_date = st.sidebar.date_input("Departure date", date(2027, 6, 13))
