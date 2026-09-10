@@ -194,7 +194,7 @@ c4.metric("Top match", f"{scored.iloc[0]['overall_score']:.1f}%")
 st.divider()
 
 top = scored.iloc[0]
-st.subheader(f"🥇 Best Match: {top['city']}, {top['country']}")
+st.subheaderst.subheader(f"Your Best Match: {top['city']}, {top['country']} 🌍")
 
 a, b, c, d = st.columns(4)
 a.metric("Match score", f"{top['overall_score']:.1f}%")
