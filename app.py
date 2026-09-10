@@ -3,7 +3,55 @@ import pandas as pd
 import streamlit as st
 from datetime import date
 
-st.set_page_config(page_title="AI Vacation Destination Optimizer", page_icon="✈️", layout="wide")
+st.set_page_configst.markdown("""
+<style>
+
+.block-container {
+    padding-top: 2rem;
+    padding-bottom: 3rem;
+    max-width: 1200px;
+}
+
+h1 {
+    font-size: 3rem !important;
+    font-weight: 700 !important;
+    letter-spacing: -1px;
+}
+
+h2, h3 {
+    font-weight: 600 !important;
+}
+
+[data-testid="stMetric"] {
+    background: white;
+    border-radius: 16px;
+    padding: 18px;
+    border: 1px solid #E2E2E2;
+    box-shadow: 0 4px 14px rgba(0,0,0,0.05);
+}
+
+[data-testid="stSidebar"] {
+    border-right: 1px solid #E0E0E0;
+}
+
+.stButton > button {
+    border-radius: 12px;
+    padding: 0.65rem 1.2rem;
+    font-weight: 600;
+}
+
+[data-testid="stDataFrame"] {
+    border-radius: 14px;
+    overflow: hidden;
+}
+
+div[data-testid="stExpander"] {
+    border-radius: 12px;
+    border: 1px solid #E1E1E1;
+}
+
+</style>
+""", unsafe_allow_html=True)
 
 @st.cache_data
 def load_data():
