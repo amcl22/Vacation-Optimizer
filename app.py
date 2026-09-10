@@ -1,9 +1,14 @@
-
 import pandas as pd
 import streamlit as st
 from datetime import date
 
-st.set_page_configst.markdown("""
+st.set_page_config(
+    page_title="AI Vacation Destination Optimizer",
+    page_icon="✈️",
+    layout="wide"
+)
+
+st.markdown("""
 <style>
 
 .block-container {
