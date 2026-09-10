@@ -1,0 +1,18 @@
+
+MBA Project Framing
+
+Problem:
+Travelers spend significant time comparing airfare, weather, destination costs, travel time, and activities across multiple websites.
+
+Solution:
+A personalized AI-assisted decision-support dashboard that consolidates those variables and ranks destinations based on the traveler's priorities.
+
+AI / analytics components:
+- normalization of heterogeneous variables
+- weighted multi-criteria decision model
+- personalized ranking
+- explainable recommendations
+- optional generative-AI explanation layer
+
+Demo:
+Use three traveler profiles to demonstrate that the same destinations rank differently when user preferences change.
