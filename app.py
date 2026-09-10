@@ -179,9 +179,9 @@ scored.loc[scored["flight_hours"] > max_flight, "overall_score"] -= (
 scored["overall_score"] = scored["overall_score"].clip(0, 100).round(1)
 scored = scored.sort_values("overall_score", ascending=False).reset_index(drop=True)
 
-st.title("AI Vacation Destination Optimizer")
+st.titlest.title("Where Should You Go Next? ✈️")
 st.markdown(
-    "Find the best destination based on **budget, weather, travel convenience, and personal interests**."
+    "Personalized destination recommendations based on your budget, travel style, weather preferences, and interests."
 )
 
 c1, c2, c3, c4 = st.columns(4)
